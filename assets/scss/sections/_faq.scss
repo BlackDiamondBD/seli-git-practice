@@ -1,0 +1,9 @@
+@use '../utils/' as *;
+@use '../base/' as *;
+
+.faq {
+	&--section {
+		padding: 40px 0;
+		background-color: $primary;
+	}
+}
