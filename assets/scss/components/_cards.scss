@@ -179,6 +179,90 @@
     }
     // Explore-houses-cars- Card---end
 
+    // Service Cards Css Start ====
+    &--service {
+        background-color: $white-color;
+        padding: 7px 0px;
+        border-radius: 15px;
+        @include media-query(breakpoint-xl) {
+            padding: 11px 0px;
+            border-radius: 20px;
+        }
+        & .card {
+            &__thumb {
+                position: relative;
+                &-img {
+                    width: 100%;
+                    height: 295px;
+                    border-radius: 15px;
+                    @include media-query(breakpoint-md) {
+                        height: 360px;
+                    }
+                    @include media-query(breakpoint-xxl) {
+                        height: 460px;
+                    }
+                }
+                &-info {
+                    max-width: 212px;
+                    background-color: $white-color;
+                    padding: 10px 10px;
+                    border-radius: 15px;
+                    position: absolute;
+                    left: 12px;
+                    bottom: 12px;
+                    @include media-query(breakpoint-md) {
+                        padding: 17px 18px 25px 21px;
+                        border-radius: 15px;
+                        max-width: 300px;
+                        bottom: 10px;
+                        left: 8px;
+                    }
+                    @include media-query(breakpoint-xxl) {
+                        padding: 17px 18px 25px 21px;
+                        border-radius: 20px;
+                        max-width: 358px;
+                        bottom: 10px;
+                        left: 8px;
+                    }
+                    & h5 {
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-bottom: 6px;
+                        @include media-query(breakpoint-md) {
+                            font-size: 18px;
+                            line-height: 1;
+                            margin-bottom: 10px;
+                        }
+                        @include media-query(breakpoint-xxl) {
+                            font-size: 25px;
+                            line-height: 1;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    & p {
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: $text-black;
+                        font-weight: 700;
+                        line-height: 14px;
+                        @include media-query(breakpoint-md) {
+                            font-size: 13px;
+                            line-height: 22px;
+                            font-weight: 500;
+                        }
+                        @include media-query(breakpoint-xxl) {
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Service Cards Css   end ====
+
     // Testimonial Card Start
     &--testimonial {
         padding: 15px;

@@ -14,7 +14,6 @@ h6 {
     padding: 0;
 }
 
-
 // Font Sizes
 .fs-1 {
     font-size: 34px !important;
@@ -85,5 +84,17 @@ h6 {
     }
     @include media-query(breakpoint-xxl-2) {
         font-size: 35px !important;
+    }
+}
+
+.lead-text {
+    font-size: 16px;
+    line-height: 1;
+    @include media-query(breakpoint-md) {
+    }
+    @include media-query(breakpoint-lg) {
+    }
+    @include media-query(breakpoint-xl) {
+        font-size: 20px;
     }
 }
