@@ -1,0 +1,39 @@
+@use '../utils/' as *;
+
+// Text Colors
+.text-primary {
+    color: $primary !important;
+}
+.text-secondary {
+    color: $secondary !important;
+}
+.text-dark-gray {
+    color: $dark-gray !important;
+}
+
+// Containers Width
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+
+    @include media-query(breakpoint-sm) {
+        max-width: 540px;
+    }
+    @include media-query(breakpoint-md) {
+        max-width: 720px;
+    }
+    @include media-query(breakpoint-lg) {
+        max-width: 960px;
+    }
+    @include media-query(breakpoint-xl) {
+        max-width: 1140px;
+    }
+    @include media-query(breakpoint-xxl) {
+        max-width: 1320px;
+    }
+    @include media-query(breakpoint-xxl-2) {
+        max-width: 1472px;
+        width: 100%;
+    }
+}
